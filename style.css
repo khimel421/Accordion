@@ -1,3 +1,82 @@
-body{
-    background-color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*__text__*/
+/*__back_Ground__*/
+/*__Dividers__*/
+/*__Typography__*/
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+body {
+  background-color: #af67e9;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: #af67e9;
+    font-family: "Kumbh Sans", sans-serif;
+    height: 800px;
+    text-align: center;
+  }
+  .main_box {
+    background-color: white;
+    width: 317px;
+    margin-top: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-bottom: 50px;
+  }
+  .main_img {
+    position: absolute;
+    height: 165px;
+    top: 64px;
+    right: 80px;
+  }
+  .shadow {
+    margin-left: -8px;
+  }
+  .faq__box {
+    width: 317px;
+    margin: 0px 10px;
+    padding: 0px 11px;
+    text-align: left;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .accordion__item {
+    padding: 5px;
+  }
+  .btn {
+    font-size: 13px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+  }
+  .btn::after {
+    content: url("./images/icon-arrow-down.svg");
+    margin-left: 5px;
+  }
+  .content {
+    font-size: 12px;
+    padding-bottom: 13px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+  }
+  .collapse {
+    margin-top: 8px;
+    height: 0px;
+    overflow: hidden;
+    border-bottom: 1px #e7e7e9 solid;
+    -webkit-transition-duration: 800ms;
+            transition-duration: 800ms;
+  }
+}
+/*# sourceMappingURL=style.css.map */
