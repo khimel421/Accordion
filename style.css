@@ -16,7 +16,104 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 375px) {
+.main_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  background-color: white;
+  margin: 140px auto;
+  width: 750px;
+  overflow: hidden;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+.content {
+  font-size: 12px;
+  padding-bottom: 13px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.box {
+  position: absolute;
+  margin-left: -133px;
+  margin-top: 147px;
+}
+
+.shadow {
+  display: none;
+}
+
+.main_img {
+  margin-left: -73px;
+}
+
+.box {
+  margin-left: -100px;
+}
+
+.faq__box {
+  width: 290px;
+  text-align: left;
+  margin-top: 32px;
+  margin-right: 20px;
+}
+
+.btn {
+  font-size: 13px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+
+.btn::after {
+  content: url("./images/icon-arrow-down.svg");
+  margin-left: 5px;
+}
+
+.content {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.collapse {
+  margin-top: 8px;
+  height: 0px;
+  overflow: hidden;
+  border-bottom: 1px #e7e7e9 solid;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+}
+
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_box {
+    width: 652px;
+  }
+  .main_img {
+    width: 353px;
+    margin-left: -56px;
+  }
+  .box {
+    margin-top: 108px;
+    height: 142px;
+    margin-left: -80px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
   body {
     background-color: #af67e9;
     font-family: "Kumbh Sans", sans-serif;
@@ -24,6 +121,7 @@ body {
     text-align: center;
   }
   .main_box {
+    display: block;
     background-color: white;
     width: 317px;
     margin-top: 164px;
@@ -32,11 +130,15 @@ body {
     border-radius: 20px;
     padding-bottom: 50px;
   }
+  .box {
+    display: none;
+  }
   .main_img {
     position: absolute;
     height: 165px;
     top: 64px;
-    right: 80px;
+    right: 109px;
+    width: 219px;
   }
   .shadow {
     margin-left: -8px;
@@ -49,7 +151,14 @@ body {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 66px;
     border-radius: 0px 0px 20px 20px;
+  }
+  .faq__box::before {
+    content: 'FAQ';
+    margin-left: 115px;
+    font-weight: 700;
+    font-size: 31px;
   }
   .accordion__item {
     padding: 5px;
@@ -77,6 +186,28 @@ body {
     border-bottom: 1px #e7e7e9 solid;
     -webkit-transition-duration: 800ms;
             transition-duration: 800ms;
+  }
+  h1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main_img {
+    position: absolute;
+    height: 165px;
+    top: 64px;
+    right: 84px;
+    width: 217px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main_img {
+    position: absolute;
+    height: 165px;
+    top: 64px;
+    right: 55px;
   }
 }
 /*# sourceMappingURL=style.css.map */
